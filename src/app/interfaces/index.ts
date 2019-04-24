@@ -1,3 +1,3 @@
-export * from './inews';
-export * from './inews-list';
-export * from './iuser';
+export { INews } from './inews';
+export { INewsList } from './inews-list';
+export { IUser } from './iuser';
