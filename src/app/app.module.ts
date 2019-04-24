@@ -17,6 +17,8 @@ import { SiteLogoWidgetComponent } from './page-builder/components/site-logo-wid
 import { CartLinkWidgetComponent } from './page-builder/components/cart-link-widget/cart-link-widget.component';
 import { AccountLinkWidgetComponent } from './page-builder/components/account-link-widget/account-link-widget.component';
 
+import { NewsService} from './services/news/news.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,9 @@ import { AccountLinkWidgetComponent } from './page-builder/components/account-li
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    NewsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
