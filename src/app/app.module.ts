@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { NewsService} from './services/news/news.service'
+import { NewsService} from './commons-modules/services/news/news.service'
 
 @NgModule({
   declarations: [
