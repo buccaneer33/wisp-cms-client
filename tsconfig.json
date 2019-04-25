@@ -2,6 +2,14 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+        "@app/*": ["app"],
+        "@core/*":["app/core-modules"],
+        "@commons/*":["app/commons-modules"],
+        "@page-builder/*":["app/core-modules/page-builder"],
+        "@page-components/*":["app/core-modules/page-builder/components"],
+        "@page-models/*":["app/core-modules/page-builder/models"]
+      },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
