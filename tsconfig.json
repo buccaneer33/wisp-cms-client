@@ -3,9 +3,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-        "@core/*": ["./src/app/core-modules/*"],
-        "@commons/*": ["./src/app/commons-modules/*"],
-        "@interfaces/*": ["./src/app/commons-modules/interfaces/*"],
+        "@app/*": ["./src/app/*"],
+        "@core/*":["./src/app/core-modules/*"],
+        "@commons/*":["./src/app/commons-modules/*"],
+        "@page-builder/*":["./src/app/core-modules/page-builder/*"],
+        "@page-components/*":["./src/app/core-modules/page-builder/components/*"],
+        "@page-models/*":["./src/app/core-modules/page-builder/models/*"]
       },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
