@@ -1,2 +1,2 @@
 export * from './widgetAttributes';
-export * from './widgetMetadata';
+export * from './widgetInterface';

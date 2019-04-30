@@ -5,17 +5,17 @@
     "date": "21-04-19",
     "slots" : [
         {
-            "id": "1",
+            "id": 1,
             "name": "Header",
-            "type": "Header",
+            "type": "header-block",
             "widgets": [
                 {
-                    "widget_id": 101,
-                    "widget_name": "Site logo",
-                    "widget_type": "site-logo",
+                    "id": 101,
+                    "name": "Site logo",
+                    "type": "site-logo",
                     "attributes": {
-                        "wid_src": "https://via.placeholder.com/45",
-                        "wid_url": "localhost:8080",
+                        "src": "https://via.placeholder.com/45",
+                        "url": "localhost:8080",
                         "css": {
                             "left": "50px",
                             "top": "50px",
@@ -24,13 +24,13 @@
                         }
                     },
                     "content" : {
-                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /></a>"
+                        "html": "<a href = 'url'><img src='src' alt='name' /></a>"
                     }
                 },
                 {
-                    "widget_id": 102,
-                    "widget_name": "Site title",
-                    "widget_type": "site-title",
+                    "id": 102,
+                    "name": "Site title",
+                    "type": "site-title",
                     "attributes": {
                         "css": {
                             "left": "60%",
@@ -42,13 +42,13 @@
                     },
                     "content": {
                         "html": null,
-                        "text": "Site title"
+                        "value": "Site title"
                     }
                 },
                 {
-                   "widget_id": 103,
-                   "widget_name": "site slogan",
-                   "widget_type": "site-slogan",
+                   "id": 103,
+                   "name": "site slogan",
+                   "type": "site-slogan",
                     "attributes": {
                         "css": {
                             "left": "60%",
@@ -60,17 +60,16 @@
                     },
                     "content": {
                         "html": null,
-                        "text": "Site slogan"
+                        "value": "Site slogan"
                     }
                 },
                 {
-                    "widget_id": 104,
-                    "widget_name": "order cart",
-                    "widget_type": "order-cart",
-                    "cart_value": 1,
+                    "id": 104,
+                    "name": "order cart",
+                    "type": "cart-link",
                     "attributes": {
-                        "wid_src": "https://pixabay.com/images/id-1105049/",
-                        "wid_url": "localhost:8080/cart",
+                        "src": "https://pixabay.com/images/id-1105049/",
+                        "url": "localhost:8080/cart",
                         "css": {
                             "left": "85%",
                             "top": "50px",
@@ -80,16 +79,17 @@
                         }
                     },
                     "content": {
-                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /><span>cart_value</span></a>"
+                        "html": "<a href = 'url'><img src='src' alt='name' /><span>cart_value</span></a>",
+                        "value": "1"
                     }
                 },
                 {
-                    "widget_id": 105,
-                    "widget_name": "Personal Area",
-                    "widget_type": "personal-area",
+                    "id": 105,
+                    "name": "Personal Area",
+                    "type": "account-link",
                     "attributes": {
-                        "wid_src": "",
-                        "wid_url": "localhost:8080/cart",
+                        "src": "",
+                        "url": "localhost:8080/cart",
                         "css": {
                             "left": "90%",
                            "top": "20px",
@@ -99,7 +99,7 @@
                         }
                     },
                     "content": {
-                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /></a>"
+                        "html": "<a href = 'url'><img src='src' alt='name' /></a>"
                     }
                 }
             ],
@@ -115,10 +115,10 @@
             }
         },
         {
-            "id": "2",
+            "id": 2,
             "name": "Main",
-            "type": "main",
-            "pageSlots": [
+            "type": "main-block",
+            "witgets": [
                 {
                     "id": 201,
                     "name": "page_slot_1",
@@ -139,12 +139,12 @@
                     },
                     "witgets": [
                         {
-                            "widget_id": 2001,
-                            "widget_name": "Page title",
-                            "widget_type": "page-title",
+                            "id": 2001,
+                            "name": "Page title",
+                            "type": "page-title",
                             "attributes": {
-                                "wid_src": "null",
-                                "wid_url": "null",
+                                "src": "null",
+                                "url": "null",
                                 "css": {
                                     "left": "10%",
                                     "top": "20px",
@@ -155,16 +155,16 @@
                             },
                             "content": {
                                 "html": null,
-                                "text": "Page title"
+                                "value": "Page title"
                             }
                         },
                         {
-                            "widget_id": 2002,
-                            "widget_name": "Text field",
-                            "widget_type": "text-field",
+                            "id": 2002,
+                            "name": "Text field",
+                            "type": "text-field",
                             "attributes": {
-                                "wid_src": "null",
-                                "wid_url": "null",
+                                "src": "null",
+                                "url": "null",
                                 "css": {
                                     "left": "10%",
                                     "top": "20px",
@@ -175,7 +175,7 @@
                             },
                             "content": {
                                 "html": null,
-                                "text": "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "
+                                "value": "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "
                             }
                         }
                     ]
@@ -196,17 +196,17 @@
             ]
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "footer",
-            "type": "footer",
+            "type": "footer-block",
             "widgets": [
                 {
-                    "widget_id": 301,
-                    "widget_name": "Site_logo",
-                    "widget_type": "site-logo",
+                    "id": 301,
+                    "name": "Site_logo",
+                    "type": "site-logo",
                     "attributes": {
-                        "wid_src": "https://via.placeholder.com/45",
-                        "wid_url": "localhost:8080",
+                        "src": "https://via.placeholder.com/45",
+                        "url": "localhost:8080",
                         "css": {
                             "left": "50px",
                             "top": "50px",
@@ -215,7 +215,7 @@
                         }
                     },
                     "content" : {
-                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /></a>"
+                        "html": "<a href = 'url'><img src='src' alt='name' /></a>"
                     }
                 }
             ],
