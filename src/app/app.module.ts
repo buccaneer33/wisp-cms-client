@@ -22,10 +22,12 @@ import { NewsService} from './commons-modules/services/news/news.service';
 import { NewsItemWidgetComponent } from './core-modules/page-builder/components/news-item-widget/news-item-widget.component';
 import { PageTitleWidgetComponent } from './core-modules/page-builder/components/page-title-widget/page-title-widget.component';
 import { PageBuilderComponent } from './core-modules/page-builder/page-builder/page-builder.component';
+import { GoodsComponent } from './commons-modules/components/goods/goods.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    GoodsComponent
     HeaderWidgetComponent,
     FooterWidgetComponent,
     MainWidgetComponent,
