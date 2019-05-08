@@ -21,6 +21,7 @@ import { NewsService} from './commons-modules/services/news/news.service';
 import { GoodsComponent } from './commons-modules/components/goods/goods.component'
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
