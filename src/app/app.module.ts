@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderWidgetComponent } from './core-modules/page-builder/components/header-widget/header-widget.component';
@@ -18,8 +19,10 @@ import { CartLinkWidgetComponent } from './core-modules/page-builder/components/
 import { AccountLinkWidgetComponent } from './core-modules/page-builder/components/account-link-widget/account-link-widget.component';
 
 import { NewsService} from './commons-modules/services/news/news.service';
+import { NewsItemWidgetComponent } from './core-modules/page-builder/components/news-item-widget/news-item-widget.component';
+import { PageTitleWidgetComponent } from './core-modules/page-builder/components/page-title-widget/page-title-widget.component';
+import { PageBuilderComponent } from './core-modules/page-builder/page-builder/page-builder.component';
 import { GoodsComponent } from './commons-modules/components/goods/goods.component'
-
 
 @NgModule({
   declarations: [
@@ -38,10 +41,14 @@ import { GoodsComponent } from './commons-modules/components/goods/goods.compone
     ImageSingleWidgetComponent,
     SiteLogoWidgetComponent,
     CartLinkWidgetComponent,
-    AccountLinkWidgetComponent
+    AccountLinkWidgetComponent,
+    NewsItemWidgetComponent,
+    PageTitleWidgetComponent,
+    PageBuilderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [
     NewsService
