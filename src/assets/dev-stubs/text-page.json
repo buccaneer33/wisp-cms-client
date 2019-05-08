@@ -1,0 +1,234 @@
+{
+    "name": "Start page",
+    "meta_desc": "Page meta description",
+    "meta_keys": "page, angular, mentoring",
+    "date": "21-04-19",
+    "slots" : [
+        {
+            "id": "1",
+            "name": "Header",
+            "type": "Header",
+            "widgets": [
+                {
+                    "widget_id": 101,
+                    "widget_name": "Site logo",
+                    "widget_type": "site-logo",
+                    "attributes": {
+                        "wid_src": "https://via.placeholder.com/45",
+                        "wid_url": "localhost:8080",
+                        "css": {
+                            "left": "50px",
+                            "top": "50px",
+                            "width": "45px",
+                            "height": "45px"
+                        }
+                    },
+                    "content" : {
+                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /></a>"
+                    }
+                },
+                {
+                    "widget_id": 102,
+                    "widget_name": "Site title",
+                    "widget_type": "site-title",
+                    "attributes": {
+                        "css": {
+                            "left": "60%",
+                            "top": "20px",
+                            "background": "green",
+                            "width": "200px",
+                            "height": "25px"
+                        }
+                    },
+                    "content": {
+                        "html": null,
+                        "text": "Site title"
+                    }
+                },
+                {
+                   "widget_id": 103,
+                   "widget_name": "site slogan",
+                   "widget_type": "site-slogan",
+                    "attributes": {
+                        "css": {
+                            "left": "60%",
+                            "top": "50px",
+                            "background": "red",
+                            "width": "200px",
+                            "height": "25px"
+                        }
+                    },
+                    "content": {
+                        "html": null,
+                        "text": "Site slogan"
+                    }
+                },
+                {
+                    "widget_id": 104,
+                    "widget_name": "order cart",
+                    "widget_type": "order-cart",
+                    "cart_value": 1,
+                    "attributes": {
+                        "wid_src": "https://pixabay.com/images/id-1105049/",
+                        "wid_url": "localhost:8080/cart",
+                        "css": {
+                            "left": "85%",
+                            "top": "50px",
+                            "background": "lightblue",
+                            "width": "45px",
+                            "height": "45px"
+                        }
+                    },
+                    "content": {
+                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /><span>cart_value</span></a>"
+                    }
+                },
+                {
+                    "widget_id": 105,
+                    "widget_name": "Personal Area",
+                    "widget_type": "personal-area",
+                    "attributes": {
+                        "wid_src": "",
+                        "wid_url": "localhost:8080/cart",
+                        "css": {
+                            "left": "90%",
+                           "top": "20px",
+                            "background": "maroon",
+                            "width": "45px",
+                            "height": "45px"
+                        }
+                    },
+                    "content": {
+                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /></a>"
+                    }
+                }
+            ],
+            "attributes":{
+                "css": {
+                    "left": "0px",
+                    "top": "0px",
+                    "position": "fixed",
+                    "background": "grey",
+                    "width": "100%",
+                    "height": "45px"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "name": "Main",
+            "type": "main",
+            "pageSlots": [
+                {
+                    "id": 201,
+                    "name": "page_slot_1",
+                    "type": "side-column",
+                    "attributes": {
+                        "height": "100%",
+                        "width": "15%"
+                    },
+                    "witgets": []
+                },
+                {
+                    "id": 202,
+                    "name": "page_slot_2",
+                    "type": "main-column",
+                    "attributes": {
+                        "height": "100%",
+                        "width": "60%"
+                    },
+                    "witgets": [
+                        {
+                            "widget_id": 2001,
+                            "widget_name": "Page title",
+                            "widget_type": "page-title",
+                            "attributes": {
+                                "wid_src": "null",
+                                "wid_url": "null",
+                                "css": {
+                                    "left": "10%",
+                                    "top": "20px",
+                                    "background": "null",
+                                    "width": "90%",
+                                    "height": "45px"
+                                }
+                            },
+                            "content": {
+                                "html": null,
+                                "text": "Page title"
+                            }
+                        },
+                        {
+                            "widget_id": 2002,
+                            "widget_name": "Text field",
+                            "widget_type": "text-field",
+                            "attributes": {
+                                "wid_src": "null",
+                                "wid_url": "null",
+                                "css": {
+                                    "left": "10%",
+                                    "top": "20px",
+                                    "background": "null",
+                                    "width": "90%",
+                                    "height": "45px"
+                                }
+                            },
+                            "content": {
+                                "html": null,
+                                "text": "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 203,
+                    "name": "page_slot_3",
+                    "type": "side-column",
+                    "attributes": {
+                        "height": "100%",
+                        "width": "15%"
+                    },
+                    "witgets": {
+                        
+                    }
+                    
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "footer",
+            "type": "footer",
+            "widgets": [
+                {
+                    "widget_id": 301,
+                    "widget_name": "Site_logo",
+                    "widget_type": "site-logo",
+                    "attributes": {
+                        "wid_src": "https://via.placeholder.com/45",
+                        "wid_url": "localhost:8080",
+                        "css": {
+                            "left": "50px",
+                            "top": "50px",
+                            "width": "35px",
+                            "height": "35px"
+                        }
+                    },
+                    "content" : {
+                        "html": "<a href = 'wid_url'><img src='wid_src' alt='widget_name' /></a>"
+                    }
+                }
+            ],
+            "attributes":{
+                "css": {
+                    "left": "0px",
+                    "top": "0px",
+                    "position": "fixed",
+                    "background": "lightgrey",
+                    "width": "100%",
+                    "height": "45px"
+                }
+            }
+        }
+    ]
+}
