@@ -17,11 +17,14 @@ import { SiteLogoWidgetComponent } from './core-modules/page-builder/components/
 import { CartLinkWidgetComponent } from './core-modules/page-builder/components/cart-link-widget/cart-link-widget.component';
 import { AccountLinkWidgetComponent } from './core-modules/page-builder/components/account-link-widget/account-link-widget.component';
 
-import { NewsService} from './commons-modules/services/news/news.service'
+import { NewsService} from './commons-modules/services/news/news.service';
+import { GoodsComponent } from './commons-modules/components/goods/goods.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    GoodsComponent
     HeaderWidgetComponent,
     FooterWidgetComponent,
     MainWidgetComponent,

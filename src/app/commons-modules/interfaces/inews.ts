@@ -1,5 +1,4 @@
 import { IUser } from './iuser';
-
 export interface INews {
     id: number;
     title: string;
